@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wikipedia Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <form action="/FIFAWorldCup.php" method="POST">
+
+          <div class="pt-4">
+            <h1>FIFA World Cup Quiz</h1>
+
+            <p> Do you think you are a major soccer fan? Find out after taking this quiz!
+                You can find the answers in this <a href="https://en.wikipedia.org/wiki/FIFA_World_Cup">Wikipedia page</a>. </p>
+          </div>
+
+          <div class="p-2">
+            <p>What country has the most titles? (choose only one)</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="chile" name="most_titles" value="Chile">
+              <label class="form-check-label" for="chile">Chile</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="brazil" name="most_titles" value="Brazil">
+              <label class="form-check-label" for="brazil">Brazil</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="germany" name="most_titles" value="Germany">
+              <label class="form-check-label" for="germany">Germany</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="argentina" name="most_titles" value="Argentina">
+              <label class="form-check-label" for="argentina">Argentina</label>
+            </div>
+          </div>
+
+          <div class="p-2">
+          <label for="fwinner" class="form-label">Who was the World Cup's first winner?</label>
+          <input type="text" id="fwinner" name="fwinner" class="form-control">
+          </div>
+
+          <div class="p-2">
+          <p>Which three countries were part of the podium in the 2018's World Cup? (1st place, 2nd place and 3rd place)</p>
+          <input type="checkbox" id="italy" name="2018Podium" value="Italy">
+          <label for="italy">Italy</label><br>
+          <input type="checkbox" id="russia" name="2018Podium" value="Russia">
+          <label for="russia">Russia</label><br>
+          <input type="checkbox" id="france" name="2018Podium" value="France">
+          <label for="france">France</label><br>
+          <input type="checkbox" id="poland" name="2018Podium" value="Poland">
+          <label for="poland">Poland</label><br>
+          <input type="checkbox" id="croatia" name="2018Podium" value="Croatia">
+          <label for="croatia">Croatia</label><br>
+          <input type="checkbox" id="belgium" name="2018Podium" value="Belgium">
+          <label for="belgium">Belgium</label><br>
+          </div>
+
+          <div class="p-2">
+          <label for="trophy" class="form-label">What did Italian designer Silvio Gazzaniga say about the current trophy?</label><br>
+          <textarea id="trophy" name="trophy" class="form-control" rows="5">Complete the phrase: "The lines spring out from the base..."
+          </textarea><br>
+          </div>
+
+          <div class="p-2">
+          <label for="stolenTrophy" class="form-label">In what year was the World Cup's trophy stolen?</label><br>
+          <input type="text" id="stolenTrophy" name="stolenTrophy" class="form-control"><br>
+          </div>
+
+          <div class="p-2">
+          <label for="1986_winner">Who won the World Cup in 1986?</label>
+          <select id="1986_winner" name="1986_winner">
+          <option>Mexico</option>
+          <option>Spain</option>
+          <option>Argentina</option>
+          <option>England</option>
+          <option>Canada</option>
+          <option>Portugal</option>
+          </select><br>
+          </div>
+
+
+          <div class="py-4 ps-2">
+          <input type="submit" value="Submit Answers" class="btn btn-primary">
+          <input type="reset" value="Start over" class="btn btn-light">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
